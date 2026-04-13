@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Demo — Nevara AI</title>
+  <meta name="description" content="See Nevara AI run a live call on your pipeline. 20 minutes, tailored to your ICP." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><span class="logo-mark">N</span><span>Nevara</span></a>
+      <div class="nav-links">
+        <a href="index.html">Product</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="index.html#faq">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <a href="demo.html" class="sign-in">Sign in</a>
+        <a href="demo.html" class="btn btn-primary btn-lg active">Book a Demo</a>
+        <button class="nav-burger" id="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+    <a href="index.html">Product</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="demo.html">Book a Demo</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="overline">// Book a Demo</span>
+      <h1 class="h1">See a live call<br>on your pipeline.</h1>
+      <p>A 20-minute walkthrough with a live test call on a lead from your ICP. No deck, no fluff.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 40px;">
+    <div class="container">
+      <div class="demo-grid">
+        <form class="demo-form reveal" data-demo>
+          <div class="row">
+            <div class="field"><label for="f-first">First name</label><input id="f-first" type="text" required /></div>
+            <div class="field"><label for="f-last">Last name</label><input id="f-last" type="text" required /></div>
+          </div>
+          <div class="field"><label for="f-email">Work email</label><input id="f-email" type="email" placeholder="you@company.com" required /></div>
+          <div class="row">
+            <div class="field"><label for="f-company">Company</label><input id="f-company" type="text" required /></div>
+            <div class="field"><label for="f-role">Role</label>
+              <select id="f-role">
+                <option>VP Sales / CRO</option>
+                <option>Head of SDR</option>
+                <option>Founder / CEO</option>
+                <option>Head of GTM</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="f-team">SDR team size</label>
+              <select id="f-team">
+                <option>Just me</option>
+                <option>2–5</option>
+                <option>6–20</option>
+                <option>21–50</option>
+                <option>50+</option>
+              </select>
+            </div>
+            <div class="field"><label for="f-volume">Monthly dials</label>
+              <select id="f-volume">
+                <option>&lt; 1,000</option>
+                <option>1,000 – 5,000</option>
+                <option>5,000 – 25,000</option>
+                <option>25,000+</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="f-notes">Tell us about your outbound motion</label><textarea id="f-notes" placeholder="What are you selling? Who to? Where are you stuck?"></textarea></div>
+          <button type="submit" class="btn btn-primary btn-lg btn-arrow">
+            Book my Demo
+            <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <p style="font-size:0.78rem;color:var(--text-dim);margin-top:12px;text-align:center;">We'll reply within one business hour.</p>
+          <div class="form-success hidden">
+            ✓ Thanks — we'll be in touch within the hour to schedule your demo.
+          </div>
+        </form>
+
+        <aside class="demo-side reveal reveal-delay-1">
+          <span class="overline">// What you'll see</span>
+          <h2 class="h2" style="margin-top:14px;">A 20-minute walk-through.</h2>
+          <p>No slides. We'll call a sample lead from your ICP live, on the call with you — so you can hear exactly how Nevara handles a real conversation.</p>
+          <ul class="demo-list">
+            <li>
+              <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>Live call demo</strong><small>Hear Nevara handle a real prospect in real time.</small></div>
+            </li>
+            <li>
+              <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>Your playbook, tailored</strong><small>We'll write a starter script based on your ICP before the call.</small></div>
+            </li>
+            <li>
+              <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>Full dashboard tour</strong><small>Intent scoring, analytics, CRM sync — everything under the hood.</small></div>
+            </li>
+            <li>
+              <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>ROI projection</strong><small>Estimated meetings + cost-per-meeting based on your volume.</small></div>
+            </li>
+          </ul>
+
+          <div style="padding: 20px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-radius: var(--radius-md);">
+            <div style="display:flex;gap:10px;align-items:center;margin-bottom:10px;">
+              <span class="badge"><span class="dot"></span> Fast response</span>
+            </div>
+            <p style="font-size:0.92rem;color:var(--text);">Prefer email? Reach us at <strong style="color:var(--text);">hello@nevara.ai</strong> — we reply within an hour, business hours.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><span class="logo-mark">N</span><span>Nevara</span></a>
+          <p>AI telecallers that book meetings for your sales team — 24 hours a day.</p>
+        </div>
+        <div class="footer-col"><h4>Product</h4><ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="demo.html">Book a demo</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Company</h4><ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Status</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Security</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bot">
+        <div>© 2026 Nevara AI, Inc.</div>
+        <div>SOC 2 Type II · GDPR · HIPAA-ready</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Nevara AI</title>
+  <meta name="description" content="Simple, usage-based pricing. Pay only for connected calls. No per-seat fees." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><span class="logo-mark">N</span><span>Nevara</span></a>
+      <div class="nav-links">
+        <a href="index.html">Product</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html" class="active">Pricing</a>
+        <a href="index.html#faq">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <a href="demo.html" class="sign-in">Sign in</a>
+        <a href="demo.html" class="btn btn-primary btn-lg">Book a Demo</a>
+        <button class="nav-burger" id="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+    <a href="index.html">Product</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="demo.html">Book a Demo</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="overline">// Pricing</span>
+      <h1 class="h1">Pay per <span class="gradient-text">meeting booked</span>,<br>not per seat.</h1>
+      <p>Pick a plan that matches your outbound volume. Upgrade, downgrade, or pause any time.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 40px;">
+    <div class="container">
+      <div style="text-align:center;">
+        <div class="pricing-toggle">
+          <button class="active" data-mode="monthly">Monthly</button>
+          <button data-mode="annual">Annual <span class="save">Save 20%</span></button>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Starter -->
+        <div class="price-card reveal reveal-delay-1">
+          <div class="tier">Starter</div>
+          <div class="tier-desc">For founders and solo reps testing outbound.</div>
+          <div class="price-amount">
+            <span class="c">$</span>
+            <span class="n" data-monthly="299" data-annual="239">299</span>
+            <span class="u">/ mo</span>
+          </div>
+          <div class="billing" data-billing>Billed monthly</div>
+          <ul class="price-features">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>500 connected call minutes / mo</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>1 AI agent, 1 campaign</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>CSV import, Google Calendar</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Email support</li>
+            <li class="muted"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/></svg>CRM sync</li>
+            <li class="muted"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="5" y1="12" x2="19" y2="12"/></svg>Warm transfer</li>
+          </ul>
+          <a href="demo.html" class="btn btn-ghost">Start free trial</a>
+        </div>
+
+        <!-- Growth (featured) -->
+        <div class="price-card featured reveal reveal-delay-2">
+          <div class="tier">Growth</div>
+          <div class="tier-desc">For revenue teams scaling outbound motion.</div>
+          <div class="price-amount">
+            <span class="c">$</span>
+            <span class="n" data-monthly="899" data-annual="719">899</span>
+            <span class="u">/ mo</span>
+          </div>
+          <div class="billing" data-billing>Billed monthly</div>
+          <ul class="price-features">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>2,500 connected minutes / mo</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>5 AI agents, unlimited campaigns</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Salesforce, HubSpot two-way sync</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Live intent scoring + warm transfer</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>A/B testing + analytics</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Priority support + onboarding</li>
+          </ul>
+          <a href="demo.html" class="btn btn-primary">Book a Demo</a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="price-card reveal reveal-delay-3">
+          <div class="tier">Enterprise</div>
+          <div class="tier-desc">For teams with custom compliance & scale needs.</div>
+          <div class="price-amount">
+            <span class="n">Custom</span>
+          </div>
+          <div class="billing">Volume pricing</div>
+          <ul class="price-features">
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Unlimited minutes & agents</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Custom voice + persona</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Dedicated infrastructure</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Regional data residency (US/EU/IN)</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Custom SLAs & DPA</li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>Dedicated CSM</li>
+          </ul>
+          <a href="demo.html" class="btn btn-ghost">Talk to Sales</a>
+        </div>
+      </div>
+
+      <p style="text-align:center;color:var(--text-dim);font-size:0.88rem;margin-top:40px;">
+        All plans include a 14-day free trial · No credit card required to start · Overage at $0.35/min
+      </p>
+    </div>
+  </section>
+
+  <!-- Compare / FAQ -->
+  <section id="faq">
+    <div class="container-sm">
+      <div class="section-head center reveal">
+        <span class="overline">// Pricing FAQ</span>
+        <h2 class="h2">Billing, simply.</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-head">What counts as a "connected call minute"?<span class="plus">+</span></button>
+          <div class="faq-body"><div>Only conversations that connect to a human and last ≥ 20 seconds. Voicemails, unanswered calls, and wrong numbers are free.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-head">Is there a per-seat fee?<span class="plus">+</span></button>
+          <div class="faq-body"><div>Never. Add as many teammates to the dashboard as you want — you only pay for connected minutes.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-head">What happens if I go over my plan?<span class="plus">+</span></button>
+          <div class="faq-body"><div>Overage is billed at $0.35/min on Starter, $0.28/min on Growth. You can set a monthly cap to avoid surprises.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-head">Can I switch plans anytime?<span class="plus">+</span></button>
+          <div class="faq-body"><div>Yes — upgrade, downgrade, or pause in one click. Annual plans prorate on upgrade.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-head">Do you offer a free trial?<span class="plus">+</span></button>
+          <div class="faq-body"><div>Every plan starts with 14 days and 150 free minutes. No credit card required.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card">
+        <h2 class="h2">Not sure which plan fits?</h2>
+        <p>Tell us your ICP and monthly call volume — we'll recommend the right tier on a 20-minute call.</p>
+        <div class="cta-actions">
+          <a href="demo.html" class="btn btn-primary btn-lg btn-arrow">
+            Book a Demo
+            <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="features.html" class="btn btn-outline btn-lg">See features</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><span class="logo-mark">N</span><span>Nevara</span></a>
+          <p>AI telecallers that book meetings for your sales team — 24 hours a day.</p>
+        </div>
+        <div class="footer-col"><h4>Product</h4><ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="demo.html">Book a demo</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Company</h4><ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Status</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Security</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bot">
+        <div>© 2026 Nevara AI, Inc.</div>
+        <div>SOC 2 Type II · GDPR · HIPAA-ready</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

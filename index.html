@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nevara AI — AI telecaller for sales teams</title>
+  <meta name="description" content="Nevara calls, qualifies, and books meetings for your sales team — 24/7. Natural voice AI that pays for itself." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">N</span>
+        <span>Nevara</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Product</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <a href="demo.html" class="sign-in">Sign in</a>
+        <a href="demo.html" class="btn btn-primary btn-lg">Book a Demo</a>
+        <button class="nav-burger" id="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+    <a href="index.html">Product</a>
+    <a href="features.html">Features</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="demo.html">Book a Demo</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge hero-badge">
+        <span class="dot"></span>
+        <span>New · GPT-4o voice engine is live</span>
+      </div>
+      <h1 class="hero-title">
+        Your AI SDR that actually <span class="grad">books meetings.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Nevara calls your leads, qualifies them in natural conversation, handles objections, and books meetings straight into your calendar — 24 hours a day.
+      </p>
+      <div class="hero-actions">
+        <a href="demo.html" class="btn btn-primary btn-lg btn-arrow">
+          Book a 20-min demo
+          <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#how" class="btn btn-ghost btn-lg">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Watch 2-min tour
+        </a>
+      </div>
+      <div class="hero-trust">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>No credit card · SOC 2 compliant · Cancel anytime</span>
+      </div>
+
+      <!-- HERO VISUAL: Call UI mock -->
+      <div class="hero-visual">
+        <div class="call-panel">
+          <div class="call-head">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <div class="url">app.nevara.ai/calls/live</div>
+            <div class="live"><span class="dot"></span>LIVE</div>
+          </div>
+          <div class="call-body">
+            <div class="call-side">
+              <div class="call-contact">
+                <div class="call-avatar">SK</div>
+                <div>
+                  <div class="name">Sara Kapoor</div>
+                  <div class="meta">VP Ops · Finlayer Inc.</div>
+                </div>
+              </div>
+              <div class="call-stat"><span class="label">Duration</span><span class="val">02:14</span></div>
+              <div class="call-stat"><span class="label">Sentiment</span><span class="val good">● Positive</span></div>
+              <div class="call-stat"><span class="label">Intent Score</span><span class="val good">87 / 100</span></div>
+              <div class="call-stat"><span class="label">Next Step</span><span class="val">Calendar slot</span></div>
+              <div class="waveform" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="call-transcript">
+              <div class="msg ai">
+                <div>
+                  <div class="who">Nevara AI</div>
+                  <div class="bubble">Hi Sara — this is Ava from Finlayer's team. Do you have a minute to chat about cutting your AP cycle from 9 days to under 2?</div>
+                </div>
+              </div>
+              <div class="msg user">
+                <div>
+                  <div class="who">Sara Kapoor</div>
+                  <div class="bubble">Sure, but we just switched ERPs last month — is this going to be a heavy lift?</div>
+                </div>
+              </div>
+              <div class="msg ai">
+                <div>
+                  <div class="who">Nevara AI</div>
+                  <div class="bubble">Totally fair question. For teams on NetSuite it's usually a 30-minute setup. Can I book you 20 minutes with our solutions lead Thursday at 3pm?</div>
+                </div>
+              </div>
+              <div class="msg user typing">
+                <div>
+                  <div class="who">Sara Kapoor</div>
+                  <div class="bubble"><span class="typing-dots"><span></span><span></span><span></span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS -->
+  <section class="logos">
+    <div class="container">
+      <p class="label">Trusted by revenue teams at</p>
+      <div class="logos-row">
+        <span>Finlayer</span>
+        <span>Stackwise</span>
+        <span>Northbeam</span>
+        <span>Relay.io</span>
+        <span>Corelay</span>
+        <span>Orbital</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section class="metrics">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric reveal reveal-delay-1">
+          <div class="n"><span data-count="8.4" data-decimals="1" data-suffix="×">0</span></div>
+          <div class="lbl">More connects vs. human SDRs</div>
+        </div>
+        <div class="metric reveal reveal-delay-2">
+          <div class="n"><span data-count="71" data-suffix="%">0</span></div>
+          <div class="lbl">Reduction in cost-per-meeting</div>
+        </div>
+        <div class="metric reveal reveal-delay-3">
+          <div class="n"><span data-count="24" data-suffix="/7">0</span></div>
+          <div class="lbl">Always-on coverage</div>
+        </div>
+        <div class="metric reveal reveal-delay-4">
+          <div class="n"><span data-count="2.1" data-decimals="1" data-suffix="s">0</span></div>
+          <div class="lbl">Average response latency</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES GRID -->
+  <section id="features">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="overline">// Capabilities</span>
+        <h2 class="h2">Everything a great SDR does —<br>without the ramp time.</h2>
+        <p>Nevara runs outbound, qualifies, handles objections, and syncs the whole conversation into your CRM. No scripts to maintain, no headcount to train.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg></div>
+          <h3>Human-sounding voice</h3>
+          <p>Sub-second latency, natural turn-taking, and backchannels ("mm-hmm", "got it") — your prospects can't tell it's AI.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></div>
+          <h3>40+ languages</h3>
+          <p>Run campaigns in English, Hindi, Spanish, Arabic and more — with accent-aware voices that localize the pitch.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <h3>Calendar + CRM sync</h3>
+          <p>Books directly into Google or Outlook. Pushes clean notes, intent scores, and next steps to HubSpot, Salesforce, or Pipedrive.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Objection handling</h3>
+          <p>Trained on 2M+ sales conversations. Pivots smoothly on price, timing, and authority objections — and knows when to back off.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 12l4-4 4 4 6-6"/></svg></div>
+          <h3>Live intent scoring</h3>
+          <p>Every call gets a 0–100 intent score you can route on — hot leads get a human SDR instantly, cold leads get nurtured.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <h3>Compliant by default</h3>
+          <p>TCPA & GDPR aware. Do-not-call honoring, consent capture, recording disclosures, and SOC 2 Type II audited.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" style="padding-top: 40px;">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="overline">// How it works</span>
+        <h2 class="h2">Live in a week, not a quarter.</h2>
+      </div>
+      <div class="steps">
+        <div class="step-card reveal reveal-delay-1">
+          <div class="step-num">Step 01</div>
+          <h3>Upload your lead list</h3>
+          <p>Drop a CSV, sync from your CRM, or plug in via API. We enrich each lead with fresh firmographics automatically.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-2">
+          <div class="step-num">Step 02</div>
+          <h3>Describe the pitch in plain English</h3>
+          <p>No scripts. Tell Nevara what you sell and who you sell to — it writes the opening, qualifiers, and objection playbook.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-3">
+          <div class="step-num">Step 03</div>
+          <h3>Watch meetings hit your calendar</h3>
+          <p>Campaigns run 24/7. You get daily summaries, recordings, and clean notes — booked meetings land directly in your calendar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG FEATURE ROWS -->
+  <section style="padding-top: 0;">
+    <div class="container">
+
+      <div class="feature-row">
+        <div class="reveal">
+          <span class="badge-chip">Intent Engine</span>
+          <h2 class="h2" style="margin-top:14px;">Score every lead, route the hot ones.</h2>
+          <p>Nevara listens for buying signals — budget mentions, timeline words, competitive displacement — and scores each call in real time. Hot leads can be warm-transferred to a human rep mid-call.</p>
+          <ul class="feature-checks">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Real-time 0–100 intent scoring</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Warm transfer to rep on signal</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Custom signal rules per campaign</li>
+          </ul>
+        </div>
+        <div class="feature-visual reveal reveal-delay-1">
+          <div class="intent-list">
+            <div class="intent-row">
+              <div class="label-col"><span class="tag hot">HOT</span><span>Sara K. — Finlayer</span></div>
+              <span class="score">92</span>
+            </div>
+            <div class="intent-row">
+              <div class="label-col"><span class="tag hot">HOT</span><span>Dev M. — Corelay</span></div>
+              <span class="score">87</span>
+            </div>
+            <div class="intent-row">
+              <div class="label-col"><span class="tag warm">WARM</span><span>Priya T. — Orbital</span></div>
+              <span class="score">64</span>
+            </div>
+            <div class="intent-row">
+              <div class="label-col"><span class="tag warm">WARM</span><span>James O. — Relay.io</span></div>
+              <span class="score">58</span>
+            </div>
+            <div class="intent-row">
+              <div class="label-col"><span class="tag cold">COLD</span><span>Mark L. — Stackwise</span></div>
+              <span class="score">23</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-row reverse">
+        <div class="reveal">
+          <span class="badge-chip">Analytics</span>
+          <h2 class="h2" style="margin-top:14px;">A dashboard your CRO will love.</h2>
+          <p>Every call transcribed, every objection tagged, every outcome tracked. See what's working, what's not, and A/B test openings across thousands of calls overnight.</p>
+          <ul class="feature-checks">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Full searchable transcripts</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Auto-tagged objections & themes</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Cohort A/B testing at scale</li>
+          </ul>
+        </div>
+        <div class="feature-visual reveal reveal-delay-1">
+          <div class="dash-stat"><div><div class="n">1,284</div><div class="lbl">Calls today</div></div><div class="delta">↑ 12%</div></div>
+          <div class="dash-stat"><div><div class="n">42<small>%</small></div><div class="lbl">Connect rate</div></div><div class="delta">↑ 4.2%</div></div>
+          <div class="dash-stat"><div><div class="n">87</div><div class="lbl">Meetings booked</div></div><div class="delta">↑ 23%</div></div>
+          <div class="dash-stat"><div><div class="n">$184</div><div class="lbl">Cost per meeting</div></div><div class="delta">↓ 31%</div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="overline">// Loved by sales teams</span>
+        <h2 class="h2">What our customers say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card reveal reveal-delay-1">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Replaced our entire SDR tier for outbound cold. We went from 4 reps to 1 sales engineer who just closes the warm-transfers Nevara pushes over."</blockquote>
+          <div class="testi-author"><div class="testi-avatar">MR</div><div><div class="name">Maya Rao</div><div class="role">VP Sales, Stackwise</div></div></div>
+        </div>
+        <div class="testi-card reveal reveal-delay-2">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Three of my prospects literally complimented 'Ava' — they had no idea it was AI. Scheduled demos are up 4× month over month."</blockquote>
+          <div class="testi-author"><div class="testi-avatar">JO</div><div><div class="name">James Okafor</div><div class="role">CRO, Relay.io</div></div></div>
+        </div>
+        <div class="testi-card reveal reveal-delay-3">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Setup took less than an afternoon. The intent scoring alone paid for the quarter — we stopped wasting rep time on obvious 'no's."</blockquote>
+          <div class="testi-author"><div class="testi-avatar">PT</div><div><div class="name">Priya Tandon</div><div class="role">Head of GTM, Orbital</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container-sm">
+      <div class="section-head center reveal">
+        <span class="overline">// FAQ</span>
+        <h2 class="h2">Good questions.</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-head">Will my prospects know it's AI?<span class="plus">+</span></button>
+          <div class="faq-body"><div>Nevara always identifies itself when asked — that's a hard requirement and good practice. In blind tests, 88% of prospects rate the voice as "a confident human SDR" unless directly told otherwise.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-head">How long does setup take?<span class="plus">+</span></button>
+          <div class="faq-body"><div>Most teams are live within 3–5 business days. We run a kickoff call, ingest your ICP and positioning, import a seed list, and ship you a test campaign of 50 calls to review before going live at scale.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-head">Is this TCPA / GDPR compliant?<span class="plus">+</span></button>
+          <div class="faq-body"><div>Yes. Nevara is SOC 2 Type II audited, honors DNC lists in real time, captures consent, discloses recording, and gives you per-region residency controls (US / EU / India).</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-head">Which CRMs do you integrate with?<span class="plus">+</span></button>
+          <div class="faq-body"><div>Native two-way sync with Salesforce, HubSpot, Pipedrive, and Close. Webhooks and a full REST API for anything else. Calendar: Google, Outlook, and Calendly.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-head">What if a lead needs a human?<span class="plus">+</span></button>
+          <div class="faq-body"><div>Nevara can warm-transfer mid-call based on intent score, keyword triggers ("pricing", "decision maker", etc.), or on explicit ask. Your rep gets a live summary in their CRM before they pick up.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card">
+        <span class="overline">// Ready when you are</span>
+        <h2 class="h2" style="margin-top:16px;">See Nevara run your playbook.</h2>
+        <p>20-minute demo, tailored to your ICP. We'll call a sample lead live, on the call with you.</p>
+        <div class="cta-actions">
+          <a href="demo.html" class="btn btn-primary btn-lg btn-arrow">
+            Book a Demo
+            <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="pricing.html" class="btn btn-outline btn-lg">See Pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><span class="logo-mark">N</span><span>Nevara</span></a>
+          <p>AI telecallers that book meetings for your sales team — 24 hours a day, in 40+ languages.</p>
+          <div class="socials">
+            <a href="#" aria-label="Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.8a8.49 8.49 0 0 1-2.36.64 4.13 4.13 0 0 0 1.81-2.27 8.21 8.21 0 0 1-2.61 1 4.1 4.1 0 0 0-7 3.74 11.64 11.64 0 0 1-8.45-4.29 4.16 4.16 0 0 0 1.27 5.49A4.09 4.09 0 0 1 3 9.67v.05a4.1 4.1 0 0 0 3.3 4A3.93 3.93 0 0 1 5 13.9a4.11 4.11 0 0 0 3.83 2.85A8.22 8.22 0 0 1 2 18.48 11.58 11.58 0 0 0 8.29 20c7.55 0 11.68-6.25 11.68-11.67v-.53A8.43 8.43 0 0 0 22 5.8z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.3 18.3H5.7v-8h2.6v8zM7 9.2a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm11.3 9.1h-2.6v-4.3c0-1.2-.5-1.7-1.3-1.7s-1.4.6-1.4 1.7v4.3h-2.6v-8H13v1.1c.4-.6 1.4-1.3 2.6-1.3 1.9 0 2.7 1.3 2.7 3.4v4.8z"/></svg></a>
+            <a href="#" aria-label="GitHub"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.4 18.3 4.7 18.3 4.7c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 0z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="demo.html">Book a demo</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">TCPA</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bot">
+        <div>© 2026 Nevara AI, Inc. All rights reserved.</div>
+        <div>SOC 2 Type II · GDPR · HIPAA-ready</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
